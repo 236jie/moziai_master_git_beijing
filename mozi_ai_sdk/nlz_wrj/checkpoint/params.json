@@ -1,0 +1,47 @@
+{
+  "batch_mode": "truncate_episodes",
+  "clip_param": 0.2,
+  "env": "<class 'mozi_ai_sdk.test.nlz_wrj.envs.wrj_env.WRJ'>",
+  "env_config": {
+    "avail_port": [
+      49353,
+      49354,
+      49355,
+      49356,
+      49357,
+      49358,
+      49359,
+      49360,
+      49361,
+      49362,
+      49363,
+      49364,
+      49365
+    ],
+    "mode": "train"
+  },
+  "framework": "torch",
+  "kl_coeff": 1.0,
+  "lambda": 0.95,
+  "lr": 4.445352864011477e-05,
+  "multiagent": {
+    "agent_0": [
+      "Dict(obs:Box(-inf, inf, (82,), float32))",
+      "Discrete(39)",
+      {
+        "gamma": 0.99
+      }
+    ]
+  },
+  "num_envs_per_worker": 1,
+  "num_gpus": 0,
+  "num_gpus_per_worker": 0,
+  "num_sgd_iter": 1000,
+  "num_workers": 12,
+  "rollout_fragment_length": 2048,
+  "sgd_minibatch_size": 2048,
+  "train_batch_size": -1,
+  "vf_clip_param": 1000.0,
+  "vf_loss_coeff": 1e-05,
+  "vf_share_layers": true
+}

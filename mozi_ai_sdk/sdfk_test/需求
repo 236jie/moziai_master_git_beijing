@@ -1,0 +1,39 @@
+ 防空想定
+ 想定时间：2h
+
+
+# 蓝方导弹配置
+BLUE_MISSILE_TYPES = ["RGM-109E战斧巡航导弹", "AGM-158A联合防区外导弹"]
+BLUE_MISSILE_COUNT = {"RGM-109E战斧巡航导弹": 64, "AGM-158A联合防区外导弹": 48}
+
+# 红方单元配置
+RED_MISSILE_NUMBERS = [("远程C-400", 2), ("SAM Bn (HQ-9A)", 3), ("AM Bn (HQ-12)", 4)]  
+RED_UNITS = ["远程C-400", "SAM Bn (HQ-9A)", "AM Bn (HQ-12)"]
+RED_MISSILE_INFO_MAP = {"远程C-400": (2104, "萨姆-21B型", 48), "SAM Bn (HQ-9A)": (123,"HQ-9A", 32), "AM Bn (HQ-12)": (1225,"HQ-12", 24)}  # 2104是武器的dbid，AM Bn (HQ-12)初始可用数量12，打完后剩下的12枚导弹重装载需要2分钟
+; RED_MISSILE_AVAILABLE = {"远程C-400": 48, "SAM Bn (HQ-9A)": 32, "AM Bn (HQ-12)": 24} # AM Bn (HQ-12)初始可用数量12，打完后剩下的12枚导弹重装载需要2分钟
+RED_MISSILE_COST = {"远程C-400": 30, "SAM Bn (HQ-9A)": 20, "AM Bn (HQ-12)": 10}  #每种类型导弹的价值
+RED_MISSILE_RANGE = {"远程C-400": 380, "SAM Bn (HQ-9A)": 140, "AM Bn (HQ-12)": 55}  #在本想定推演中，蓝方导弹在70km才能被红方导弹探测到
+
+红方导弹的排布位置：远程C-400在最前，中间是SAM Bn (HQ-9A)，后方是AM Bn (HQ-12)，最后方是要保护的几个地面目标。每个目标被打击，奖赏值会扣比较大的分数
+红方不同导弹的位置也会影响打击效果
+强化学习目标是学习的是分配的导弹数量， 导弹时机，导弹营位置-哪个位置的导弹去打， 可以发射的数量0-3枚，默认是打2枚
+雷达在400km能探测到不明空中目标--实际是地方飞机，不能判定是蓝方
+C-400在70km 能探测到蓝方导弹，并发射导弹
+
+打掉一枚导弹也有奖励，需要把敌方（蓝方）导弹放到一个列表里，然后去查列表就可以知道是否被打掉
+
+
+for k, v in side.facilities.items():
+    if '400' in v.strName:
+        fac.append(v)
+
+飞机 m_ContactType=7， m_IdentificationStatus=4
+导弹 m_ContactType=1， m_IdentificationStatus=1
+
+
+for unit in candidates:
+    # 检查导弹数量
+    weapon_list = self._get_unit_weapon(unit)
+    available_missiles = self._get_weapon_num(weapon_list, [123, 1125, 2104])
+给每个单元维护一个武器数量的列表，初始时候武器数量，每次攻击之后的武器数量
+问题是：HQ-12和HQ-9A发送打击命令，但是武器并没有打出
