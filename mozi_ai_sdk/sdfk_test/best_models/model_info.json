@@ -1,0 +1,72 @@
+[
+  {
+    "rank": 1,
+    "protected_count": 0,
+    "missile_cost": 0.0,
+    "iteration": 1,
+    "checkpoint_path": "./best_models\\rank_1_iter_1_protected_0_cost_0.0"
+  },
+  {
+    "rank": 2,
+    "protected_count": 0,
+    "missile_cost": 0.0,
+    "iteration": 1,
+    "checkpoint_path": "./best_models\\rank_2_iter_1_protected_0_cost_0.0"
+  },
+  {
+    "rank": 3,
+    "protected_count": 0,
+    "missile_cost": 0.0,
+    "iteration": 1,
+    "checkpoint_path": "./best_models\\rank_3_iter_1_protected_0_cost_0.0"
+  },
+  {
+    "rank": 4,
+    "protected_count": 0,
+    "missile_cost": 0.0,
+    "iteration": 1,
+    "checkpoint_path": "./best_models\\rank_4_iter_1_protected_0_cost_0.0"
+  },
+  {
+    "rank": 5,
+    "protected_count": 0,
+    "missile_cost": 0.0,
+    "iteration": 2,
+    "checkpoint_path": "./best_models\\rank_5_iter_2_protected_0_cost_0.0"
+  },
+  {
+    "rank": 6,
+    "protected_count": 0,
+    "missile_cost": 0.0,
+    "iteration": 3,
+    "checkpoint_path": "./best_models\\rank_6_iter_3_protected_0_cost_0.0"
+  },
+  {
+    "rank": 7,
+    "protected_count": 0,
+    "missile_cost": 0.0,
+    "iteration": 4,
+    "checkpoint_path": "./best_models\\rank_7_iter_4_protected_0_cost_0.0"
+  },
+  {
+    "rank": 8,
+    "protected_count": 0,
+    "missile_cost": 0.0,
+    "iteration": 5,
+    "checkpoint_path": "./best_models\\rank_8_iter_5_protected_0_cost_0.0"
+  },
+  {
+    "rank": 9,
+    "protected_count": 0,
+    "missile_cost": 0.0,
+    "iteration": 6,
+    "checkpoint_path": "./best_models\\rank_9_iter_6_protected_0_cost_0.0"
+  },
+  {
+    "rank": 10,
+    "protected_count": 0,
+    "missile_cost": 0.0,
+    "iteration": 7,
+    "checkpoint_path": "./best_models\\rank_10_iter_7_protected_0_cost_0.0"
+  }
+]
