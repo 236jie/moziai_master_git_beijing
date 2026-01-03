@@ -1,0 +1,81 @@
+{
+  "summary": {
+    "num_episodes": 10,
+    "avg_protected_count": 6.6,
+    "avg_intercepted_count": 108.5,
+    "avg_reward": -0.8799999999999963,
+    "avg_steps": 159.0
+  },
+  "episodes": [
+    {
+      "episode": 1,
+      "protected_count": 7,
+      "intercepted_count": 114,
+      "reward": -0.4499999999999966,
+      "steps": 159
+    },
+    {
+      "episode": 2,
+      "protected_count": 6,
+      "intercepted_count": 112,
+      "reward": -1.0499999999999883,
+      "steps": 159
+    },
+    {
+      "episode": 3,
+      "protected_count": 8,
+      "intercepted_count": 118,
+      "reward": 0.04999999999999716,
+      "steps": 159
+    },
+    {
+      "episode": 4,
+      "protected_count": 8,
+      "intercepted_count": 119,
+      "reward": 0.050000000000018474,
+      "steps": 159
+    },
+    {
+      "episode": 5,
+      "protected_count": 8,
+      "intercepted_count": 78,
+      "reward": 0.04999999999999716,
+      "steps": 159
+    },
+    {
+      "episode": 6,
+      "protected_count": 1,
+      "intercepted_count": 83,
+      "reward": -5.549999999999982,
+      "steps": 159
+    },
+    {
+      "episode": 7,
+      "protected_count": 7,
+      "intercepted_count": 115,
+      "reward": -0.45000000000001705,
+      "steps": 159
+    },
+    {
+      "episode": 8,
+      "protected_count": 7,
+      "intercepted_count": 116,
+      "reward": -0.44999999999998863,
+      "steps": 159
+    },
+    {
+      "episode": 9,
+      "protected_count": 6,
+      "intercepted_count": 113,
+      "reward": -1.0500000000000007,
+      "steps": 159
+    },
+    {
+      "episode": 10,
+      "protected_count": 8,
+      "intercepted_count": 117,
+      "reward": 0.04999999999999716,
+      "steps": 159
+    }
+  ]
+}
